@@ -26,7 +26,7 @@ pip install -r requirements.txt
 2. Clone the repository.
 
 ```
-git clone https://github.com/[username]/techmateai.git
+git clone https://github.com/Or4cl3AI/TechMateAI
 ```
 
 3. Create a virtual environment and activate it.
