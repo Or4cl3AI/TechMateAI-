@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechMateAI - Virtual Assistant</title>
+    <script src="/static/js/jquery.min.js"></script>
+</head>
+<body>
+    <form id="chat-form">
+        <input type="text" id="message" placeholder="Type your message here...">
+        <input type="submit" value="Send">
+    </form>
+    <div id="chat-box">
+        <!-- Chat messages will be appended here -->
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#chat-form').on('submit', function(event) {
+                event.preventDefault();
+                var message = $('#message').val();
+                $.post('/chat', {message: message}, function(response) {
+                    $('#chat-box').append('<p>' + response + '</p>');
+                });
+                $('#message').val('');
+            });
+        });
+    </script>
+</body>
+</html>
