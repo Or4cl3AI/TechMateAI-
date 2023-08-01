@@ -48,3 +48,8 @@ The TechMateAI chatbot can be used by sending it messages in the chat interface.
 
 For example, you can ask the chatbot to scan your device for malware, generate a strong password, or explain how to fix a common computer problem.
 
+## Deployment
+
+1. Create a new Heroku app: `heroku create`
+2. Push the code to Heroku: `git push heroku master`
+3. Open the app in a web browser: `heroku open`

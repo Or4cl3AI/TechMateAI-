@@ -1,0 +1,9 @@
+Flask
+NLTK
+PyTorch
+SpeechRecognition
+Pandas
+Selenium
+PyAutoGUI
+Passlib
+Malwarebytes API
