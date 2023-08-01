@@ -26,6 +26,8 @@ assistant = ChatBot('TechMateAI')
 
 app = Flask(__name__)
 
+app = Flask(__name__)
+
 @app.route('/chat', methods=['POST'])
 def chat() -> str:
     """
