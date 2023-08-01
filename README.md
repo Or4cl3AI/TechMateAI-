@@ -19,28 +19,18 @@ TechMateAI is a friendly and engaging conversational AI chatbot virtual assistan
 
 1. Install the required libraries and frameworks.
 
-
 pip install -r requirements.txt
-```
 
-2. Clone the repository.
+2.Clone the repository.
 
-```
-git clone https://github.com/Or4cl3AI/TechMateAI-,
-```
+git clone <https://github.com/Or4cl3AI/TechMateAI->,
 
-3. Create a virtual environment and activate it.
+3.Create a virtual environment and activate it.
 
-```
 python -m venv venv
 source venv/bin/activate
-```
 
-4. Run the app.py file.
-
-```
-python app.py
-
+4.Run the app.py file.
 
 ## Usage
 
@@ -50,6 +40,6 @@ For example, you can ask the chatbot to scan your device for malware, generate a
 
 ## Deployment
 
-1. Create a new Heroku app: `heroku create`
+1. Create a new Heroku app: `heroku catree`
 2. Push the code to Heroku: `git push heroku master`
 3. Open the app in a web browser: `heroku open`
