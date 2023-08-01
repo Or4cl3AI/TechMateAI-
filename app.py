@@ -11,6 +11,9 @@ def index():
     """
     Serve as the main route for the Flask web application.
 
+    This function is triggered when the client sends a request to the specified URL route.
+    It returns a rendered HTML template as a response to the client's request.
+
     Returns:
         str: The rendered HTML template as the response to the client's request.
     """
@@ -20,6 +23,8 @@ app = Flask(__name__)
 
 # Initialize the TechMateAI assistant
 assistant = ChatBot('TechMateAI')
+
+app = Flask(__name__)
 
 @app.route('/chat', methods=['POST'])
 def chat() -> str:
