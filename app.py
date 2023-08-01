@@ -1,4 +1,3 @@
-```python
 from flask import Flask, render_template, request
 from assistant.assistant import TechMateAI
 
@@ -18,4 +17,3 @@ def chat():
 
 if __name__ == '__main__':
     app.run()
-```
