@@ -8,6 +8,12 @@ assistant = TechMateAI()
 
 @app.route('/')
 def index():
+    """
+    Serve as the main route for the Flask web application.
+
+    Returns:
+        str: The rendered HTML template as the response to the client's request.
+    """
     return render_template('index.html')
 
 app = Flask(__name__)
