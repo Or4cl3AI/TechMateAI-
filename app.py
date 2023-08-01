@@ -6,8 +6,10 @@ app = Flask(__name__)
 
 assistant = TechMateAI()
 
+app = Flask(__name__)
+
 @app.route('/')
-def index():
+def index() -> str:
     """
     Serve as the main route for the Flask web application.
 
@@ -18,6 +20,9 @@ def index():
         str: The rendered HTML template as the response to the client's request.
     """
     return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run()
 
 app = Flask(__name__)
 
