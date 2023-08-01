@@ -40,6 +40,9 @@ For example, you can ask the chatbot to scan your device for malware, generate a
 
 ## Deployment
 
-1. Create a new Heroku app: `heroku catree`
-2. Push the code to Heroku: `git push heroku master`
-3. Open the app in a web browser: `heroku open`
+To deploy the TechMateAI project to Heroku, follow these steps:
+
+1. Create a new Heroku app: `heroku create your-heroku-app-name`
+2. Set the Heroku API key as a secret in your GitHub repository settings. Name the secret `HEROKU_API_KEY` and set its value to your Heroku API key.
+3. Push your code to the main branch. The GitHub Actions workflow will automatically trigger and deploy the application to Heroku.
+4. Open the app in a web browser: `heroku open`
