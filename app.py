@@ -21,6 +21,13 @@ def index() -> str:
 
     Returns:
         str: The rendered HTML template as the response to the client's request.
+
+    Raises:
+        Exception: If an error occurs during the rendering process.
+
+    Notes:
+        - The function uses the Flask's built-in 'render_template' function to render the 'index.html' template.
+        - If any exception occurs during the rendering process, it catches the exception and returns an error message.
     """
     try:
         return render_template('index.html')
