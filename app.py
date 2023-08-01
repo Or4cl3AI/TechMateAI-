@@ -8,7 +8,10 @@ assistant = TechMateAI()
 
 app = Flask(__name__)
 
-@app.route('/')
+app = Flask(__name__)
+bp = Blueprint('index', __name__)
+
+@bp.route('/')
 def index() -> str:
     """
     Serve as the main route for the Flask web application.
@@ -19,7 +22,23 @@ def index() -> str:
     Returns:
         str: The rendered HTML template as the response to the client's request.
     """
+    try:
+        return render_template('index.html')
+    except Exception as e:
+        return 'An error occurred: {}'.format(e)
+
+app.add_url_rule('/', view_func=index)
+
+# Display a success message to the user
+flash('Form submitted successfully!', 'success')
+
+# Display an error message to the user
+flash('An error occurred. Please try again.', 'error')
+    """
     return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run()
 
 if __name__ == '__main__':
     app.run()
